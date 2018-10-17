@@ -1,5 +1,3 @@
-ABSTRACT
-
 In this project we on/off an LED by the sound of clap. A sound sensor is used to detect the sound and send the signal to the Arduino which sets the LED to on/off. 
 
 The components used are : 
