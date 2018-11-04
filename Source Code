@@ -1,0 +1,34 @@
+int led=13;
+int sound=2;
+int state=0;
+
+void setup() {
+  // put your setup code here, to run once:
+pinMode(led,OUTPUT);
+pinMode(sound,INPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+int x;
+x=digitalRead(sound);
+if(x==1)
+{
+   if(state==0)
+  {
+    digitalWrite(led,HIGH);
+    state=1;
+  }
+x=0;
+}
+
+x=digitalRead(sound);
+if(x==1)
+ {
+  if(state==1)
+    {
+     digitalWrite(led,LOW);
+     state=0; 
+    }
+  }
+}
